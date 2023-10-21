@@ -6,7 +6,7 @@ import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import Menu from "./components/Menu/Menu";
-// import Services from "./components/Services/Services";
+import Contact from "./components/Contact/Contact";
 
 import welcome1 from "./assets/crisps-welcome.jpeg";
 import logo from "./assets/logo.png";
@@ -43,14 +43,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
-          {/* <Route path="/services" element={<Services />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-          {/* <Redirect to="/home" />
-          <Switch>
-            <Route path="/home" element={<Home />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/contact" component={Contact} />
-          </Switch> */}
         </>
       ) : (
         <div className="welcome-page">
@@ -80,37 +74,6 @@ function App() {
       )}
     </Router>
   );
-//     <>
-//       {value ? <Home/> : (
-//         <div className="welcome-page">
-//           <img src={logo} alt="Logo" className="logo" />
-//           <img src={avatar} alt="Avatar" className="avatar" />
-//         <div className="content-column">
-//           <h1 className="app-title">Welcome to the Crisps App</h1>
-//           <p className="app-description">
-//             Discover a world of delicious snacks. From classic potato chips to exotic flavors, we've got it all.
-//           </p>
-//           <div  className="sign-in-buttons">
-//          <button onClick={() => handleClick(googleProvider)}>
-//             <FaGoogle /> Sign in with Google
-//           </button> 
-//           <button onClick={() => handleClick(facebookProvider)}>
-//             <FaFacebook /> Sign in with Facebook
-//           </button>
-//           <button onClick={() => handleClick(emailProvider)}>
-//             <FaEnvelope /> Sign in with Email
-//           </button>
-//          </div>
-//         </div>
-//         <div className="image-column">
-//           <img src={welcome1} alt="welcome page" />
-//         </div>
-//       </div>
-      
-//       )}
-//     </>
-    
-//   )
 }
 
 export default App;

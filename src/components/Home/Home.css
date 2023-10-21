@@ -1,10 +1,62 @@
-/* src/App.css */
-
 body {
     background-image: url('../../assets/Website_Promo_Image_1290_x_860__3__full_width.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-position: center center; /* Center the background image */
+    background-position: center center; 
   }
-  
+
+  .home-container{
+    background-image: url(../../assets/background-images/images-2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+
+h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #0074e4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: #0057a4;
+}
+
+.social-icons {
+  margin-top: 5px;
+  font-size: 5rem;
+}
+
+.social-icons a {
+  margin: 0 20px;
+  font-size: 5rem;
+}
