@@ -1,0 +1,10 @@
+/* src/App.css */
+
+body {
+    background-image: url('../../assets/Website_Promo_Image_1290_x_860__3__full_width.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center; /* Center the background image */
+  }
+  
